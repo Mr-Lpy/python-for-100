@@ -10,13 +10,12 @@ def generate_code(count, length):
         Re = ""
         for y in range(length):
             Re += random.choice(forSelect)
-        arr.append(Re)
+        yield Re
         # print(Re)   
-    return arr 
 
 
 if __name__ == '__main__':
     arr = generate_code(200,20)
-
-    for key, v in enumerate(arr):
-        print(key,v)
+    print(type(arr))
+    for  v in arr:
+        print(v)
