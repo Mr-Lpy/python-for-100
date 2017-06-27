@@ -27,8 +27,9 @@ class WordsCount:
         for k,v in self.wordDict.items():
             print('%s: %s' % (k,v))
 
-
+'''
 if __name__ == '__main__':
     wc = WordsCount()
     wc.getWords('D:/codefactory/git/100/python-for-100/4/test.txt')
     wc.count()
+'''
